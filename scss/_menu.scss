@@ -84,8 +84,23 @@
         }
 
         .portrait {
-            width: 250px;
-            height: 250px;
+            // width: 250px;
+            // height: 250px;
+
+            & i {
+                text-align: center;
+                margin: 0 5px;
+            }
+
+            & i:hover {
+                color: $secondary-color;
+                @include easeOut;
+                @include hoverRaise;
+            }
+
+            p {
+                border-bottom: 3px solid $secondary-color;
+            }
         }
     }
 

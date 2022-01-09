@@ -51,16 +51,22 @@
     transition: all 0.5s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
-    .menu-branding .portrait {
-      width: 250px;
-      height: 250px; }
+    .menu-branding .portrait i {
+      text-align: center;
+      margin: 0 5px; }
+    .menu-branding .portrait i:hover {
+      color: #14eb7f;
+      transition: all 0.5s ease-out;
+      transition: translateY(-10px); }
+    .menu-branding .portrait p {
+      border-bottom: 3px solid #14eb7f; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #eece1a; }
+      color: #14eb7f; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -72,7 +78,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #eece1a; }
+      color: #14eb7f; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -85,6 +91,33 @@
 
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
+
+@media screen and (max-width: 768px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100, 0, 0); } }
+
+@media screen and (max-width: 500px) {
+  main#home h1 {
+    margin-top: 10vh; } }
 
 * {
   box-sizing: border-box;
@@ -132,7 +165,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #14eb7f; }
 
 main {
   padding: 4rem;
@@ -142,7 +175,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #eece1a;
+        color: #14eb7f;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }

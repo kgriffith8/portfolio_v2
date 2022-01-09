@@ -1,6 +1,8 @@
 @import 'variables';
 @import 'mixins';
 @import 'menu';
+@import 'mobile';
+
 
 // Resets
 * {
@@ -14,7 +16,7 @@ body {
     color: $text-light;
     height: 100%;
     font-family: $font;
-    line-height: 1.5; 
+    line-height: 1.5;
 }
 
 // Headings
