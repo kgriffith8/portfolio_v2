@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'mixins';
+@import 'menu';
 
 // Resets
 * {
@@ -50,23 +51,7 @@ header {
     color: $secondary-color;
 }
 
-.background {
 
-    background: linear-gradient(
-
-            rgba($primary-color, $background-opacity),
-
-            rgba($primary-color, $background-opacity)
-
-        ),
-
-        $home-image;
-
-    background-attachment: fixed;
-
-    background-size: cover;
-
-}
 
 main {
     padding: 4rem;
