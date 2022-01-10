@@ -95,7 +95,6 @@
             & i:hover {
                 color: $secondary-color;
                 @include easeOut;
-                @include hoverRaise;
             }
 
             p {

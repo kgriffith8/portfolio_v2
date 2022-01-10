@@ -3,7 +3,7 @@
 }
 
 @mixin hoverRaise {
-    transition: translateY(-10px);
+    transition: translateY(10px);
 }
 
 @mixin background {
