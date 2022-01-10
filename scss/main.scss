@@ -1,7 +1,7 @@
 @import 'variables';
 @import 'mixins';
 @import 'menu';
-@import 'form';
+
 
 
 // Resets
@@ -56,6 +56,29 @@ header {
 }
 
 .text-secondary {
+    color: $secondary-color;
+}
+
+// Button styles
+.btn {
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+
+    // &:hover {
+    //     background: $secondary-color;
+    // }
+}
+
+.btn-dark {
+    @extend .btn;
+    background: darken($secondary-color, 50);
+}
+
+.btn-light {
+    @extend .btn;
+    background: lighten($text-light, 50);
     color: $secondary-color;
 }
 
@@ -144,6 +167,36 @@ main {
     }
 }
 
+
+// My Work / Portfolio
+.heading-container {
+    text-align: center;
+    margin: 0 auto;
+
+    p {
+        margin: 0 auto;
+        width: 50%;
+        border-bottom: 3px solid $secondary-color;
+        margin-bottom: 1rem;
+    }
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.7rem;
+
+    img {
+        width: 100%;
+        border: 2.5px solid #fff;
+
+        &:hover {
+            border: 3.5px solid $secondary-color;
+            opacity: 0.4;
+            @include easeOutSlow;
+        }
+    }
+}
 
 // Contact
 .contact-img-container {

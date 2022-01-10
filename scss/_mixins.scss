@@ -6,6 +6,10 @@
     transition: all 0.2s ease-out;
 }
 
+@mixin easeOutSlow {
+    transition: all 1.5s ease-out;
+}
+
 @mixin hoverRaise {
     transition: translateY(10px);
 }
