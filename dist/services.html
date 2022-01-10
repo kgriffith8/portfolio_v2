@@ -5,82 +5,104 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-    crossorigin="anonymous">
-
-  <link rel="stylesheet" href="css/main.css">
-  <title>About Me</title>
+   <!-- Compiled CSS -->
+   <link rel="stylesheet" href="css/main.css" />
+   <!-- Font Awesome CDN -->
+   <link 
+       rel="stylesheet" 
+       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
+       crossorigin="anonymous" 
+   />
+  <title>Services | Kyle Griffith</title>
 </head>
 
 <body>
   <header>
     <div class="menu-btn">
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
     </div>
-
     <nav class="menu">
-      <div class="menu-branding">
-        <div class="portrait"></div>
-      </div>
-      <ul class="menu-nav">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link">
-            Home
-          </a>
-        </li>
-        <li class="nav-item current">
-          <a href="services.html" class="nav-link">
-            About Me
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="work.html" class="nav-link">
-            My Work
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link">
-            How To Reach Me
-          </a>
-        </li>
-      </ul>
+        <div class="menu-branding">
+            <div class="portrait">
+                <div class="icons">
+                    <a href="#">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-codepen fa-2x"></i>
+                    </a>
+                </div>
+                <p>Copyright &copy; 2022</p>
+            </div>
+        </div>
+        <ul class="menu-nav">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                    Home
+                </a>
+            </li>
+            <li class="nav-item current">
+                <a href="services.html" class="nav-link">
+                    Services
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="work.html" class="nav-link">
+                    My Work
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">
+                    Contact
+                </a>
+            </li>
+        </ul>
     </nav>
-  </header>
+</header>
 
   <main id="about">
-    <h1 class="lg-heading">
-      About
-      <span class="text-secondary">Me</span>
+    <h1 class="lg-heading text-secondary">
     </h1>
     <h2 class="sm-heading">
-      Read More About Me
     </h2>
     <div class="about-info">
-      <img src="img/tristar.jpg" alt="John Doe" class="bio-image">
+      <img src="img/services.svg" alt="John Doe" class="bio-image">
 
       <div class="bio">
-        <h3 class="text-secondary">SERVICES AND SKILLS</h3>
-        <p></p>
+        <h3 class="text-secondary">SERVICES & SKILLS</h3>
+        <p>My name is Kyle and I have been studying front end development, web design and data structures. Below are skills and fields I take work in. </p>
+        <a href="/contact.html" class="btn-rounded">Hire Me</a>
       </div>
 
-      <div class="job job-1">
+      <div class="job job1">
         <h3>Front End Development</h3>
-        <h6>Javascript, SASS, React</h6>
-        <p>I enjoy working with front end web technologies to create vivid and functional websites and web applications.</p>
+        <h6 class="text-secondary">Javascript, SASS, NPM</h6>
+        <p >I am enthusiastic about working with front end web technologies to create vivid and functional websites and web applications.</p>
       </div>
 
-      <div class="job job-2">
+      <div class="job job2">
         <h3>System Administration</h3>
-        <h6>Ubuntu, Windows, Powershell, Terminal</h6>
+        <h6 class="text-secondary">Ubuntu, Windows, Powershell, Terminal</h6>
         <p>When I am not learning how the web works I am tinkering with operating systems to better understand errors and better optimize my workflow.</p>
       </div>
 
-      <div class="job job-3">
-        <h3>Web Development and Web Hosting Services</h3>
-        <h6>Design, Development, Deployment</h6>
-        <p>I strive to be a well rounded developer capable of keeping client interactions in house so that I can happily provide a full product while keeping everything in-house.</p>
+      <div class="job job3">
+        <h3>Web Development & Web Hosting Services</h3>
+        <h6 class="text-secondary">Design, Development, Deployment</h6>
+        <p>I strive to be a well rounded developer capable of keeping client interactions in house so that I can happily provide a full product and maintai my focus on the needs of your project.</p>
+      </div>
+
+      <div class="job job3">
+        <h3>Content Writing</h3>
+        <h6 class="text-secondary">Content, Staff & Technical Writing</h6>
+        <p>I enjoy writing about code, workflow optimization, design systems and more.</p>
+        <p></p>
       </div>
     </div>
   </main>

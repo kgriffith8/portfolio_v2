@@ -1,12 +1,17 @@
 // Widescreens
 @include mediaXl {
-
+    .sm-heading {
+        width: 40%;
+    }
 }
 
 // Desktops & Laptops
 @include mediaLg {
-    
+    .sm-heading {
+        width: 40%;
+    }
 }
+
 
 // Tablets & Small Laptop
 @include mediaMd {
@@ -40,6 +45,17 @@
     .menu-branding {
         height: 25vh;
         transform: translate3d(100, 0, 0);
+    }
+
+    .about-info {
+        grid-template-areas: 
+        'bioimage'
+        'bio'
+        'job1'
+        'job2'
+        'job3';
+        grid-template-columns: 1fr;
+
     }
 }
 
