@@ -19,6 +19,15 @@ body {
     line-height: 1.5;
 }
 
+#bg-img {
+    position: fixed;
+    inset: 0;
+    background: url(../img/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1;
+  }
+  
 // Headings
 h1,h2,h3 {
     font-weight: 400;

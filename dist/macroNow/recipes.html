@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="css/recipies.css" />
+    <!-- Google Font: Play -->
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet" /> 
+    <title>MacroNow | Recipies</title>
+</head>
+<body>
+    <nav class="navigation">
+        <ul class="navigation__list">
+         <div class="logo">
+             <h1>MacroNow</h1>
+         </div>
+            <a href="index.html" class="navigation--link underline"><li>Calculator</li></a>
+            <a href="recipes.html" class="navigation--link underline"><li>Recipes</li></a>
+            <a href="about.html" class="navigation--link underline"><li>About</li></a>
+        </ul>
+    </nav>
+   <div class="api__container">
+       <div class="api__meal--wrapper">
+           <div class="api__meal__search">
+               <h2 class="api__meal--title">Find Meals For Your Calories</h2>
+               <blockquote class="api__meal--quote">Let food be thy medicine and medicine be thy food<br />
+                   <cite class="api__meal--cite">- Socrates</cite>
+               </blockquote>
+
+               <div class="meal__search__box">
+                   <input type="text" class="meal__search--control" placeholder="Enter an ingredient or calorie count" id="searchInput" />
+                   <button type="submit" class="meal__search--btn btn" id="searchBtn">
+                       <i class="fas fa-search"></i>
+                   </button>
+               </div>
+           </div>
+           <div class="meal__search__result">
+               <h2 class="api__meal--title">Your Search Results</h2>
+               <div id="meal">
+                   <!-- Meal Item -->
+                    <div class="meal__search__item">
+                        <div class="meal__item__img">
+                            <img src="assets/placeholder-img.jpg" alt="food" class="meal__item--img">
+                        </div>
+                        <div class="meal__item__name">
+                            <h3 class="meal__item--name">Bacon Burger</h3>
+                            <a href="#" class="meal__recipe--btn">Get recipe</a>
+                        </div>
+                    </div>
+                   <!-- End of Meal Item -->
+           </div>
+           <div class="meal__search__details">
+               <!-- Recipe Close Btn -->
+               <button type="button" class="meal__close--btn btn" id="recipeCloseBtn">
+                   <i class="fas fa-times"></i>
+               </button>
+
+               <!-- Recipe Content -->
+               <div class="meal__details__content">
+                   <h2 class="meal__details--title">Meals Name Here</h2>
+                   <p class="meal__details__category">Category name</p>
+                   <div class="meal__details__instructions">
+                       <h3>Instructions: </h3>
+                       <p class="meal__details--paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus obcaecati fugit ad corporis soluta alias laboriosam explicabo voluptates labore sapiente. Iste dolores eius unde impedit deserunt accusamus laborum cum culpa quidem placeat illo quis, dolorum, sit commodi expedita, similique quas numquam accusantium enim quam. Aperiam dolore officia consequatur labore atque?</p>
+                       <p class="meal__details--paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam optio suscipit tempora vel perferendis eos nihil consequuntur similique, est aliquid.</p>
+                   </div>
+                   <div class="meal__details__img">
+                       <img src="assets/placeholder-img.jpg" alt="" class="meal__details--img">
+                   </div>
+                   <div class="details__recipe__link">
+                       <a href="#" target="_blank" class="details__recipe--link">Watch Video</a>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+   <script src="scripts/recipe.js"></script>
+</body>
+</html>
